@@ -1,18 +1,10 @@
 <?php
-session_start();
 if(isset($_POST["login"])){
     $name = $_POST["name"];
     $pass = $_POST["password"];
-    define("nam","Apurba");
-    define("pas","1234");
-
-    if($name == nam && $pass == pas){
-        $_SESSION["success"]="";
-        header("location: admin.php");
-    }
-    else{
-        header("location: index.php");
-    }
+    echo $name;
+    echo "<br>";
+    echo $pass;
 }
 ?>
 
