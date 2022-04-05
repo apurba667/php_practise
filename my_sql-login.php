@@ -15,7 +15,7 @@ if (isset($_POST['regist'])) {
     }
 
     if (count($error) == 0) {
-        $con = mysqli_connect("localhost", "root", "", "diu");
+        $con = mysqli_connect("localhost", "root","diu");
         $result =mysqli_query($con, "insert into cse (name,email,password) values('$name','$email','$pass')");
         if($result){
             echo "Data Insert Successfully";
